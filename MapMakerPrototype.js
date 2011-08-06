@@ -11,6 +11,7 @@
 		var directionsService;
 		var directionsLine;
 		var map;
+		var myChange;
 
 		google.load("visualization", "1", { packages: ["columnchart"] });
 
