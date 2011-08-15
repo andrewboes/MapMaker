@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/infoRoot"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent">
+	
+	<TableLayout
+		android:id="@+id/infoTableLayout"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,4"
+    android:layout_width="fill_parent">
+		<TableRow>
+			<TextView
+				android:id="@+id/infoDistanceTraveledLabel"
+				android:text="@string/infoDistanceText"
+				android:layout_column="1" />
+			<TextView
+				android:id="@+id/infoDistanceTraveledValue" />
+		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/infoAverageSpeedLabel"
+				android:text="@string/infoAverageSpeedText"
+				android:layout_column="1" />
+			<TextView android:id="@+id/infoAverageSpeedValue" />
+		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/infoElevationGainLabel"
+				android:text="@string/infoElevationGainText"
+				android:layout_column="1" />
+			<TextView android:id="@+id/infoElevationGainValue" />
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

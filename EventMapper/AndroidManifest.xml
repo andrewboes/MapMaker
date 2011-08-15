@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.andrewsoft" android:versionCode="1"
+	android:versionName="1.0">
+	<application
+		android:name=".MyApp" 
+		android:icon="@drawable/icon" 
+		android:label="@string/app_name" 
+		android:theme="@style/MyLightTheme.NoShadow">
+		<activity 
+			android:name="MyMappedEvent"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name="com.andrewsoft.MockActivity"></activity>
+		<activity android:name="com.andrewsoft.InfoActivity"></activity>
+		<activity 
+			android:name="com.andrewsoft.Map" 
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<uses-library android:name="com.google.android.maps" />
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-sdk android:targetSdkVersion="4" android:minSdkVersion="4"></uses-sdk>
+</manifest> 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">My Mapped Event</string>
+	<string name="mock">This is just a mock activity.</string>
+	<string name="sharedSettingsName">MyMappedEvent</string>
+	<string name="mapTabText">Map</string>
+	<string name="turnsTabText">Turns</string>
+	<string name="infoTabText">Info</string>
+	<string name="shareTabText">Share</string>
+	<string name="infoDistanceText">Total Distance:</string>
+	<string name="infoMaxSpeedText">Max Speed:</string>
+	<string name="infoTotalTimeText">Total Time:</string>
+	<string name="infoAverageSpeedText">Average Speed:</string>
+	<string name="infoElevationGainText">Elevation Gain:</string>
+	
+</resources>
