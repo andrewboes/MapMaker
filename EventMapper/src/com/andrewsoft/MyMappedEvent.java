@@ -28,8 +28,13 @@ public class MyMappedEvent extends TabActivity {
 				MODE_WORLD_WRITEABLE);
 		boolean firstLoad = preferences.getBoolean("firstLoad", true);
 		if (firstLoad) {
-			this.getUserPreferences();
+			// this.getUserPreferences();
 		}
+	}
+	
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
 	}
 
 	private void getUserPreferences() {
