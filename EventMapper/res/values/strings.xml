@@ -12,5 +12,7 @@
 	<string name="infoTotalTimeText">Total Time:</string>
 	<string name="infoAverageSpeedText">Average Speed:</string>
 	<string name="infoElevationGainText">Elevation Gain:</string>
+	<string name="infoSpeedText">Speed:</string>
+	<string name="infoCurrentElevationText">Current Elevation:</string>
 	
 </resources>

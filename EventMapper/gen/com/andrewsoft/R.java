@@ -37,20 +37,26 @@ public final class R {
         public static final int tab_unselected=0x7f020009;
     }
     public static final class id {
-        public static final int icon=0x7f08000c;
+        public static final int icon=0x7f080012;
         public static final int infoAverageSpeedLabel=0x7f080004;
         public static final int infoAverageSpeedValue=0x7f080005;
+        public static final int infoCurrentElevationLabel=0x7f080008;
+        public static final int infoCurrentElevationValue=0x7f080009;
         public static final int infoDistanceTraveledLabel=0x7f080002;
         public static final int infoDistanceTraveledValue=0x7f080003;
         public static final int infoElevationGainLabel=0x7f080006;
         public static final int infoElevationGainValue=0x7f080007;
         public static final int infoRoot=0x7f080000;
+        public static final int infoSpeedLabel=0x7f08000a;
+        public static final int infoSpeedValue=0x7f08000b;
         public static final int infoTableLayout=0x7f080001;
-        public static final int mainlayout=0x7f080009;
-        public static final int mapview=0x7f08000a;
-        public static final int mock_textview=0x7f08000b;
-        public static final int tab_relative_layout=0x7f080008;
-        public static final int title=0x7f08000d;
+        public static final int infoTotalTimeLabel=0x7f08000c;
+        public static final int infoTotalTimeValue=0x7f08000d;
+        public static final int mainlayout=0x7f08000f;
+        public static final int mapview=0x7f080010;
+        public static final int mock_textview=0x7f080011;
+        public static final int tab_relative_layout=0x7f08000e;
+        public static final int title=0x7f080013;
     }
     public static final class layout {
         public static final int info=0x7f030000;
@@ -62,9 +68,11 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f060000;
         public static final int infoAverageSpeedText=0x7f06000a;
+        public static final int infoCurrentElevationText=0x7f06000d;
         public static final int infoDistanceText=0x7f060007;
         public static final int infoElevationGainText=0x7f06000b;
         public static final int infoMaxSpeedText=0x7f060008;
+        public static final int infoSpeedText=0x7f06000c;
         public static final int infoTabText=0x7f060005;
         public static final int infoTotalTimeText=0x7f060009;
         public static final int mapTabText=0x7f060003;

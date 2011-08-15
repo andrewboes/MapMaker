@@ -35,5 +35,29 @@
 				android:layout_column="1" />
 			<TextView android:id="@+id/infoElevationGainValue" />
 		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/infoCurrentElevationLabel"
+				android:text="@string/infoCurrentElevationText"
+				android:layout_column="1" />
+			<TextView android:id="@+id/infoCurrentElevationValue" />
+		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/infoSpeedLabel"
+				android:text="@string/infoSpeedText"
+				android:layout_column="1" />
+			<TextView android:id="@+id/infoSpeedValue" />
+		</TableRow>
+		
+		<TableRow>
+			<TextView
+				android:id="@+id/infoTotalTimeLabel"
+				android:text="@string/infoTotalTimeText"
+				android:layout_column="1" />
+			<TextView android:id="@+id/infoTotalTimeValue" />
+		</TableRow>
 	</TableLayout>
 </RelativeLayout>
