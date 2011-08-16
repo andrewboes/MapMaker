@@ -53,18 +53,30 @@ public class InfoActivity extends Activity{
 	}
 	
 	private void update(){
-		distance.setText(Double.toString(myApp.getStats().getDistanceTraveled()));
-		averageSpeed.setText(Double.toString(myApp.getStats().getAverageSpeed()));
-		elevationGain.setText(Double.toString(myApp.getStats().getElevationGain()));
-		speed.setText(Double.toString(myApp.getStats().getSpeed()));
-		currentElevation.setText(Double.toString(myApp.getStats().getCurrentElevation()));
+		distance.setText(metersToMiles(myApp.getStats().getDistanceTraveled()));
+		averageSpeed.setText(mpsToMph(myApp.getStats().getAverageSpeed()));
+		elevationGain.setText(metersToFeet(myApp.getStats().getElevationGain()));
+		speed.setText(mpsToMph(myApp.getStats().getSpeed()));
+		currentElevation.setText(metersToFeet(myApp.getStats().getCurrentElevation()));
 		
 		long travelTime = myApp.getStats().getTotalTime();
 		totalTime.setText(this.convertMillisToHoursMinutesString(travelTime));
-		redrawHandler.sleep(500);
+		redrawHandler.sleep(200);
 	}
 	
-	public String convertMillisToHoursMinutesString(long millis) {       
+	private String metersToMiles(double meters)	{
+		return Double.toString(0.000621371192 * meters);
+	}
+	
+	private String mpsToMph(double mps){
+		return Double.toString(2.23693629 * mps);
+	}
+	
+	private String metersToFeet(double meters){
+		return Double.toString(3.2808399 * meters);
+	}
+	
+	private String convertMillisToHoursMinutesString(long millis) {       
 	    String format = String.format("%%0%dd", 2);  
 	    millis = millis / 1000;  
 	    String seconds = String.format(format, millis % 60);  

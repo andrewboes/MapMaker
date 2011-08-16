@@ -66,14 +66,6 @@ public class Map extends MapActivity {
 	private void addLocation(Location location) {
 		locations.add(location);
 		myApp.getStats().update(location);
-		Log.d("EVENTMAPPER",
-				"Num locations:" + Integer.toString(locations.size()));
-		Log.d("EVENTMAPPER",
-				"Current Speed:" + Float.toString(location.getSpeed()));
-		Log.d("EVENTMAPPER",
-				"Distance Traveled:"
-						+ Double.toString(myApp.getStats()
-								.getDistanceTraveled()));
 		overlay.addPoint(location);
 	}
 
@@ -95,7 +87,7 @@ public class Map extends MapActivity {
 
 			@Override
 			public void onLocationChanged(Location location) {
-				if (location.getAccuracy() < 200)
+				if(validateLocation(location))
 					addLocation(location);
 				// if recording
 			}
@@ -107,5 +99,13 @@ public class Map extends MapActivity {
 		MyLocationOverlay myLocation = new MyLocationOverlay(this, mapView);
 		myLocation.enableMyLocation();
 		mapView.getOverlays().add(myLocation);
+	}
+	
+	private boolean validateLocation(Location location){
+		if (location.getAccuracy() > 200) 
+			return false; // Terrible accuracy.
+		else if (locations.size() > 1 && location.distanceTo(locations.get(locations.size()-1)) < 4)  
+			return false; // Didn't go far enough, probably didn't move.
+		return true;
 	}
 }
